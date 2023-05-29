@@ -15,44 +15,47 @@ export default function Footer () {
     
 
     return (
-    <div>
+    <div className="">
         
-        <h1>Contact</h1>
+        <h1 className='text-blue-600'>Contact</h1>
 
-        <div>
-            <BrokenLine />
-        </div>
+     
 
 
         <div className='display-contact-message'>
-            <p>
+            <p className='text-2xl'>
                 <a href="https://www.google.com">{displayContactMessage}</a> 
             </p>
         </div>
 
-        <span>
-            <div className='social-media'>
-                <div>
-                    <SocialIcon url="https://www.linkedin.com/in/loreli-de-jesus-084b571a5/" />
+        <span className=''>
+
+            <div className='flex items-center justify-center border-b-2 border-purple p-6 lg:justify-between'>
+
+                <div class="mr-12 hidden lg:block">
+                    <span>Get connected with us on social networks:</span>
                 </div>
-                
-                <div>
-                    <SocialIcon url="https://github.com/DJ-Lor" />
+            
+                <div className='social-media flex space-x-4'>
+                    <div>
+                        <SocialIcon url="https://www.linkedin.com/in/loreli-de-jesus-084b571a5/" bgColor="purple"/>
+                    </div>
+                    
+                    <div>
+                        <SocialIcon url="https://github.com/DJ-Lor" bgColor="purple" />
+                    </div>
+
+                    <div>
+                        <SocialIcon url="https://wa.me/+61416563389" network="whatsapp" bgColor="purple"/>
+                    </div>
+
+                    <div>
+                        <SocialIcon url="mailto:dejesus.loreli@gmail.com" bgColor="purple"/>
+                    </div>
                 </div>
 
-                <div>
-                    <SocialIcon url="https://wa.me/+61416563389" network="whatsapp" />
-                </div>
-
-                <div>
-                    <SocialIcon url="mailto:dejesus.loreli@gmail.com" />
-                </div>
             </div>
-
-            <div>
-                <BrokenLine />
-            </div>
-
+           
         </span>
 
     </div>
