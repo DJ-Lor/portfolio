@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const withMT = require("@material-tailwind/react/utils/withMT");
+ 
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -14,12 +17,15 @@ module.exports = {
     colors: {
      
       'purple': '#52154E',
-      'light-blue': "#DAE0F2"
-    
+      'light-blue': "#DAE0F2",
+      'black': "#000000",
+      'white': "#FFFFFF",
+      'floral-white': "#FFF8F0",
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      'font-family': ['Roboto Mono', 'monospace']
+      
+      
     },
     extend: {
       spacing: {

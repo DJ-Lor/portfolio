@@ -2,7 +2,7 @@ import React from 'react';
 
 const Box = () => {
   return (
-    <div className="w-screen h-screen bg-black"></div>
+    <div className="w-44 h-44 bg-black"></div>
   );
 };
 
