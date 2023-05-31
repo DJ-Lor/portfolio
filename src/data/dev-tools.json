@@ -1,0 +1,105 @@
+[
+    {
+        "name": "Python",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+    },
+    {
+        "name": "React",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+    },
+    {
+        "name": "Javascript",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+        "name": "Tailwind CSS",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+    },
+    {
+        "name": "CSS3",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+    },
+    {
+        "name": "HTML5",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+    },
+    {
+        "name": "MongoDB",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+    },
+    {
+        "name": "Express",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+    },
+    {
+        "name": "Node",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+    },
+    {
+        "name": "Flask",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+    },
+    {
+        "name": "SQLAlchemy",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg"
+    },
+    {
+        "name": "Postgresql",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+    },
+    {
+        "name": "Node",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+    },
+    {
+        "name": "Jest",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
+    },
+    {
+        "name": "Pytest",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg"
+    },
+    {
+        "name": "Vscode",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+    },
+    {
+        "name": "Jira",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
+    },
+    {
+        "name": "Trello",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+    },
+    {
+        "name": "Bootstrap",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+    },
+    {
+        "name": "Canva",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
+    },
+    {
+        "name": "Salesforce",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg"
+    },
+    {
+        "name": "Facebook",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+    },
+    {
+        "name": "Google",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+    },
+    {
+        "name": "Linkedin",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+    },
+    {
+        "name": "Slack",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg"
+    }
+    
+]
+
+

@@ -1,9 +1,13 @@
 import './App.css';
-import AboutMeAccordion from './components/AboutMeAccordion';
 import Footer from './components/Footer';
+import Introduction from './components/Introduction';
+import JokeGenerator from './components/JokeGenerator';
 import NavBar from './components/NavBar';
-import Box from './pages/contact';
+import Skills from './components/Skills';
 import MyFolioCard from './pages/home';
+
+
+
 
 function App() {
   return (
@@ -11,7 +15,14 @@ function App() {
 
       <NavBar />
 
-      
+      <Introduction />
+
+      <JokeGenerator />
+
+      <Skills />
+
+      <MyFolioCard />
+
       <Footer />
     
       

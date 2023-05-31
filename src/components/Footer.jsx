@@ -1,30 +1,17 @@
-import React, { useState } from 'react';
 import { SocialIcon } from 'react-social-icons';
-import contactMessage from '../data/contactMessage.json';
-import JokeGenerator from './JokeGenerator';
-
 
 export default function Footer () {
 
-    const [isAtContactPage] = useState(true)
-
-
-//    const displayContactMessage = isAtContactPage? 
-//         contactMessage.messageOffContactPage 
-//         : contactMessage.messageOnContactPage
-    
-    
-
     return (
-    <div>
+    <div className="font-google">
 
-            <div>
+            {/* <div>
                 <JokeGenerator />
             
-            </div>
+            </div> */}
        
             <div className='flex items-center justify-center px-8 py-8 lg:justify-between w-[92%] mx-auto'>
-                <div class="mr-12 hidden lg:block">
+                <div className="mr-12 hidden lg:block text-sm">
                     <p >My Portfolio 2023 ©</p>
                     <p >Created by Loreli - with love (& lots of caffeine!)</p>
                 </div>
@@ -48,8 +35,6 @@ export default function Footer () {
                 </div>
             </div>
            
-       
-
     </div>
     )
 

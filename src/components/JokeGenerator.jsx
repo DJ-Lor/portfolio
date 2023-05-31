@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Button from './Button'
 
 export default function JokeGenerator () {
     const [joke, setJoke] = useState('')
@@ -38,7 +39,7 @@ export default function JokeGenerator () {
     }
 
     return (
-        <div className="max-w-screen-lg mx-auto p-4 mb-24 mt-24">
+        <div className="max-w-screen-lg mx-auto p-4 mb-24 mt-24 font-google">
           <div className="w-full h-64 pb-full rounded-xl bg-floral-white flex items-center justify-center">
             <div className="grid h-screen text-xl text-black place-items-center">
               <div className="">
@@ -46,13 +47,7 @@ export default function JokeGenerator () {
                   onSubmit={generateJoke}
                   className="w-3/4 mx-auto text-center"
                 >
-                 <button className="relative px-6 py-3 font-bold text-black group">
-                    <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2
-                     bg-purple/30 group-hover:translate-x-0 group-hover:translate-y-0"></span>
-                    <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
-                    <span className="relative sm:mt-2 md:mt-4 lg:mt-8">Click for a Dad Joke</span>
-                </button>
-
+                <Button onClick={generateJoke}>Click for a Dad Joke</Button>
 
                 </form>
                 <p className="mt-6 sm:text-sm md:text-md lg:text-xl m-8 font-light text-center">

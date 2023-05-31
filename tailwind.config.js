@@ -23,7 +23,7 @@ module.exports = {
       'floral-white': "#FFF8F0",
     },
     fontFamily: {
-      'font-family': ['Roboto Mono', 'monospace']
+      'google': ['Roboto Mono', 'monospace']
       
       
     },
@@ -34,7 +34,18 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '2rem',
-      }
+      },
+      fontSize: {
+        'xs': '0.75rem',   // Extra small font size
+        'sm': '0.875rem',  // Small font size
+        'base': '1rem',    // Base font size (default)
+        'lg': '1.125rem',  // Large font size
+        'xl': '1.25rem',   // Extra large font size
+        '2xl': '1.5rem',   // Twice the base font size
+        '3xl': '1.875rem', // Three times the base font size
+        '4xl': '2rem', // Four times the base font size
+
+      },
     }
   }
 }

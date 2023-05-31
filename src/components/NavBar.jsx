@@ -1,31 +1,32 @@
 import { useState } from "react"
+import Button from "./Button";
 
 export default function NavBar() {
 
     const [hamburger, setHamburger] = useState('menu');
-    const [toggleDropDown, setToggleDropDown] = useState(-100);
+    const [toggleDropDown, setToggleDropDown] = useState(false);
 
     function onToggleMenu() {
         if (hamburger === 'menu') {
             setHamburger('close')
-            setToggleDropDown(9)
+            setToggleDropDown(true)
         } else {
             setHamburger('menu')
-            setToggleDropDown(-100)
+            setToggleDropDown(false)
         }
     }
 
-
     return (
 
-        <div>
+        <div className="h-64 w-full">
+        <div className="font-google text-xl mt-10">
             <header className="bg-white">
-            <nav className="px-3 sm:px4">
+            <nav className="py-4 sm:px4">
                 {/* Navigation Container */}
-                <div className="w-[92%] mx-auto flex wrap items-center justify-between">
+                <div className="w-[90%] mx-auto flex wrap items-center justify-between">
                     {/* Logo */}
                     <a href="/" className="flex items-center cursor-pointer">
-                        <img className="mr-5 h-6 sm:h-9" src="https://imglarger.com/Images/before-after/ai-image-enlarger-1-before-2.jpg" alt="temp" />
+                        <Button></Button>
                     </a>
 
                 {/* Mobile Menu Bar */}
@@ -35,24 +36,22 @@ export default function NavBar() {
  
 
                 {/* Navigation Item Menu */}
-                <div className={`duration-200 md:static absolute md:bg-white bg-purple/30 md:min-h-fit min-h-[20vh] left-0 top-[${toggleDropDown}%] md:w-auto w-full flex item-center px-8 py-6`}>
+                <div className={`duration-400 md:static absolute md:bg-white bg-purple/30 md:min-h-fit min-h-[20vh] left-0 ${toggleDropDown ? 'top-[9%]' : 'top-[-100%]'} md:w-auto w-full flex item-center px-8 py-6`}>
                     <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
-                        {/* <ul className="mt-4 flex flex-col rounded-lg p-4 md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium">
-                             */}
                             <li>
-                                <a href="/" className="uppercase text-black hover:text-light-blue"> 
+                                <a href="/" className="uppercase text-black hover:underline"> 
                                 About 
                                 </a>
                             </li>
 
                             <li>
-                                <a href="/" className="uppercase text-black hover:text-light-blue"> 
+                                <a href="/" className="uppercase text-black hover:underline"> 
                                 Projects
                                 </a>
                             </li>
 
                             <li>
-                                <a href="/" className="uppercase text-black hover:text-light-blue"> 
+                                <a href="/" className="uppercase text-black hover:underline"> 
                                 Contact 
                                 </a>
                             </li>
@@ -64,7 +63,7 @@ export default function NavBar() {
             </header>
 
         </div>
-       
+        </div>
 
     )
 }
