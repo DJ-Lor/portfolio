@@ -1,7 +1,7 @@
 import './App.css';
 import AboutMeAccordion from './components/AboutMeAccordion';
 import Footer from './components/Footer';
-import Introduction from './pages/Introduction';
+import NavBar from './components/NavBar';
 import Box from './pages/contact';
 import MyFolioCard from './pages/home';
 
@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="App">
 
-       <Introduction />
+      <NavBar />
 
       
-        <Footer />
+      <Footer />
     
       
     </div>
