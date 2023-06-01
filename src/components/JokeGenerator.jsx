@@ -50,7 +50,7 @@ export default function JokeGenerator () {
                 <Button onClick={generateJoke}>Click for a Dad Joke</Button>
 
                 </form>
-                <p className="mt-6 sm:text-sm md:text-md lg:text-xl m-8 font-light text-center">
+                <p className="mt-6 text-sm md:text-md lg:text-lg m-8 font-light text-center">
                   {joke}
                 </p>
               </div>

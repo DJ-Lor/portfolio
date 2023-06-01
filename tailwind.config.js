@@ -21,6 +21,10 @@ module.exports = {
       'black': "#000000",
       'white': "#FFFFFF",
       'floral-white': "#FFF8F0",
+      'yellow': "#ffea00",
+      'pink': "#ffb6c1",
+      'gray': "#708090"
+
     },
     fontFamily: {
       'google': ['Roboto Mono', 'monospace']

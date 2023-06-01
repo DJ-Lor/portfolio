@@ -3,8 +3,8 @@ import Footer from './components/Footer';
 import Introduction from './components/Introduction';
 import JokeGenerator from './components/JokeGenerator';
 import NavBar from './components/NavBar';
-import Skills from './components/Skills';
-import MyFolioCard from './pages/home';
+import DevTools from './components/DevTools';
+import Accordion from './components/AboutMeAccordion';
 
 
 
@@ -19,9 +19,11 @@ function App() {
 
       <JokeGenerator />
 
-      <Skills />
+      <Accordion />
 
-      <MyFolioCard />
+      <DevTools />
+
+      <JokeGenerator />
 
       <Footer />
     
