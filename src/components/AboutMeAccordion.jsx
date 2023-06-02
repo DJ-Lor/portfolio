@@ -1,4 +1,5 @@
 import { useState } from "react"
+import FunFactBox from "./FunFactsBox"
 
 export default function Accordion() {
 
@@ -14,28 +15,7 @@ export default function Accordion() {
         setSelected(i)
     }
 
-    
-    const data = [
-        {
-            title: "About Me",
-            intro: "Hello, I'm Loreli!",
-            answer1: "I am a junior full stack developer and an experienced digital marketer from Sydney, Australia.",
-            answer2: "I started my career in digital marketing and ran branding and performance driven campaigns in the past 10 years. Through out my career, I worked closely with development teams on projects and always found it fascinating to see tech and digital experiences as a whole created from the ground up. Fast forward to today, I took the big leap into software development as a late career changer and highly enjoying the challenge!",
-            answer3: "Outside my professional hat, I am a wife and mum to a beautiful baby girl (now almost 2 years old!) and two fur babies. Our family live an active lifestyle and enjoy the sea, surf, and sand that the land down under has to offer!👨‍👩‍👧☀️🏄‍♀️🐶",
-            img: "/src/docs/profile-img.jpeg",
-            
-        },
-        {
-            title: 'Life As A Dev',
-            answer: "xxfsjfkjsalfjlax"
-          
-        },
-        {
-            title: '(FUN) Facts',
-            answer: "xxxfsjfgjalsfjlanjflanf"
-        },
-    
-    ]
+
 
     return(
 
@@ -55,6 +35,17 @@ export default function Accordion() {
                             <div className="text-sm md:text-l py-2"> {items.answer1} </div>
                             <div className="text-sm md:text-l py-2"> {items.answer2} </div>
                             <div className="text-sm md:text-l py-2"> {items.answer3} </div>
+                            <div className="text-sm md:text-l py-2"> {items.answer4} </div>
+                            <div className="text-sm md:text-l py-2"> {items.answer5} </div>
+                            <div className="text-sm md:text-l py-2"> {items.answer6} </div>
+                            <div className="grid grid-cols-2 space-x-8 space-y-8">
+                                <FunFactBox>{items.fact1} </FunFactBox>      
+                                <FunFactBox>{items.fact2} </FunFactBox>  
+                                <FunFactBox>{items.fact3} </FunFactBox>      
+                                <FunFactBox>{items.fact4} </FunFactBox>  
+                                <FunFactBox>{items.fact5} </FunFactBox>      
+                                <FunFactBox>{items.fact6} </FunFactBox>       
+                            </div>
                         </div>
                     </div> 
                 ))}
