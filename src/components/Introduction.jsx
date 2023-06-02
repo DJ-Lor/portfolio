@@ -4,7 +4,7 @@ export default function Introduction() {
 
     return (
     
-            <div className="font-google flex-col flex items-center flex-wrap mx-12">
+            <div className="flex-col flex flex-wrap mb-24 text-left md:text-center">
                 
                 <p className="text-purple text-3xl md:text-4xl font-bold">Hello, I'm Loreli De Jesus</p>
 

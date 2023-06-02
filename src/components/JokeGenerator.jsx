@@ -39,7 +39,7 @@ export default function JokeGenerator () {
     }
 
     return (
-        <div className="max-w-screen-lg mx-auto p-4 mb-24 mt-24 font-google">
+        <div className="max-w-screen-lg mx-auto mb-24">
           <div className="w-full h-64 pb-full rounded-xl bg-floral-white flex items-center justify-center">
             <div className="grid h-screen text-xl text-black place-items-center">
               <div className="">

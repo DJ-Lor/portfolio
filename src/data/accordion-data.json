@@ -1,0 +1,39 @@
+    
+  [
+    {
+        "title": "About Me",
+        "intro": "Hello, I'm Loreli!",
+        "render": "paragraph",
+        "midRender": " ",
+        "block1": "I am a Junior Full Stack Developer and an experienced Digital Marketer based in Sydney, Australia.",
+        "block2": "I started my career in digital marketing and ran branding and performance driven campaigns in the past 10 years. Through out my career, I worked closely with development teams on projects and always found it fascinating to see tech and digital experiences as a whole created from the ground up. Fast forward to today, I took the big leap into software development as a late career changer and highly enjoy the challenge!",
+        "block3": "Outside my professional hat, I am a wife and mum to a beautiful baby girl (now almost 2 years old!) and two fur babies. Our family live an active lifestyle and enjoy the sea, surf, and sand that the land down under has to offer! 👨‍👩‍👧☀️🏄‍♀️🐶",
+        "block4": " ",
+        "block5": " ",
+        "block6": " "
+    },
+    {
+        "title": "Life As A Dev",
+        "intro": "Developer - Digital Marketer Hybrid",
+        "render": "paragraph",
+        "midRender": "true",
+        "block1": "My previous roles in digital marketing have been pivotal in the way I operate today. I am able to carry with me the learnings I have had into my software development journey and it has helped me a lot.",
+        "block2": "🔎 Through the lens of a marketer, I am able to visualise what it means to have a relevant, enjoyable and optimised consumer journey online. If there is one thing I have learned is that consumers are impatient - thus, I am highly aware that projects not only need to be visually appealing but be optimised efficiently in the way it is built.",
+        "block3": "📅 My project management skills allow me to work more efficiently and effectively in the way I plan my development projects now. This is especially useful as I entered the development world, my planning & preparation helps me focus on the most important now - honing my expertise as a Junior Developer.",
+        "block4": "🤝🏽 Further, my experience working with teams and independently has taught me the immeasurable value of collaboration. What I especially love about the dev community is the support and knowledge sharing between peers - it is so refreshing! With that, I welcome constructive feedback in my work and look forward to collaborating more with peers. ",
+        "block5": "📓 It has definitely re-wired the way I think and made my problem-solving journey more interesting. Somehow, I find it enjoyable to look through other people’s source code and learn how things work. This helps me code better and improve my productivity.",
+        "block6": "Life as a dev did not come without hard work - it is the most challenging and rewarding but I am enjoying every good (and bad) of it. It has been an interesting journey so far - delving into software development puts my growth to an upward trajectory!🚀"
+    },
+    {
+        "title": "(FUN) Facts",
+        "intro": "Some Random Facts About Me!",
+        "render": "grid",
+        "midRender": " ",
+        "block1": "📍 I lived in Melbourne, Gold Coast and Sydney in the past 10 years. I am orginally from the Philippines, and the tropical lady in me loves the sun and see Sydney as home in the foreseeable future.",
+        "block2": "🍀 I love coriander and can have it with almost any meal. I was once given a bouquet of coriander (instead of a flower) as birthday gift.",
+        "block3": "☕ I only ever started drinking coffee in the past 20 months - the same age as my daughter.",
+        "block4": "🐶 Funny coincidence, both our rescue doggos were originally named Luna. We now have a Luna and a Shadow as having two Lunas at home would be chaos!",
+        "block5": "🧃 I have always been so drawn to a good packaging design. I highly enjoy going to supermarkets for inspiration during my travels. I once helped design a sugarcane wine label for a friend in the Philippines.",
+        "block6": "🧒 I have a special place for children in my heart and used to work as a educator and tutor. I would love for one day to promote a Coding for Kids curriculum in Australia as I believe that coding is seen in our everyday lives. By using songs, games and play, kids can be equipped with skills they need in a world ruled by technology."
+    }
+]

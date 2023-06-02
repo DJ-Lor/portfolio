@@ -11,7 +11,7 @@ import Accordion from './components/AboutMeAccordion';
 
 function App() {
   return (
-    <div className="App">
+    <div className="font-google px-10">
 
       <NavBar />
 
