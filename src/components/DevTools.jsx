@@ -8,8 +8,7 @@ export default function DevTools() {
 
        
         <div className=''>
-             {/* <div className='absolute w-full h-[60%] bg-purple skew-y-6'>
-            </div> */}
+          
             <div className="relative font-google flex-col flex items-center flex-wrap px-20">
                 <p className="relative text-purple md:text-4xl text-2xl font-bold">My Toolbox & Things I Can Do</p>
                 <p className='pt-2 pb-4'>The skills, tools and technologies I use bringing products to life. </p>

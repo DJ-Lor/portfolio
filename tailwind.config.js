@@ -23,7 +23,8 @@ module.exports = {
       'floral-white': "#FFF8F0",
       'yellow': "#ffea00",
       'pink': "#ffb6c1",
-      'gray': "#708090"
+      'gray': "#708090",
+      'beige': "#F2F3D9",
 
     },
     fontFamily: {
