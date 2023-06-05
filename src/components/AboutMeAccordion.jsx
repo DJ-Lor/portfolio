@@ -1,85 +1,180 @@
-import { useState } from "react"
-import jsonData from '../data/accordion-data.json';
+import React, { useState } from "react";
+import Button from "./Button";
 
+export default function AboutMeAccordion() {
+  const aboutMeData = [
+    {
+      title: "About Me",
+      intro: "Hello, I'm Loreli!",
+      render: "paragraph",
+      midRender: " ",
+      block1:
+        "I am a Junior Full Stack Developer and an experienced Digital Marketer based in Sydney, Australia.",
+      block2:
+        "I started my career in digital marketing and ran branding and performance driven campaigns in the past 10 years. Through out my career, I worked closely with development teams on projects and always found it fascinating to see tech and digital experiences as a whole created from the ground up. Fast forward to today, I took the big leap into software development as a late career changer and highly enjoy the challenge!",
+      block3:
+        "Outside my professional hat, I am a wife and mum to a beautiful baby girl (now almost 2 years old!) and two fur babies. Our family live an active lifestyle and enjoy the sea, surf, and sand that the land down under has to offer! 👨‍👩‍👧☀️🏄‍♀️🐶",
+      block4: " ",
+      block5: " ",
+      block6: " ",
+    },
+    {
+      title: "Life As A Dev",
+      intro: "Developer - Digital Marketer Hybrid",
+      render: "paragraph",
+      midRender: "true",
+      block1:
+        "My previous roles in digital marketing have been pivotal in the way I operate today. I am able to carry with me the learnings I have had into my software development journey and it has helped me a lot.",
+      block2:
+        "🔎 Through the lens of a marketer, I am able to visualise what it means to have a relevant, enjoyable and optimised consumer journey online. If there is one thing I have learned is that consumers are impatient - thus, I am highly aware that projects not only need to be visually appealing but be optimised efficiently in the way it is built.",
+      block3:
+        "📅 My project management skills allow me to work more efficiently and effectively in the way I plan my development projects now. This is especially useful as I entered the development world, my planning & preparation helps me focus on the most important now - honing my expertise as a Junior Developer.",
+      block4:
+        "🤝🏽 My experience working with teams and independently has taught me the immeasurable value of collaboration. What I especially love about the dev community is the support and knowledge sharing between peers - it is so refreshing! With that, I welcome constructive feedback in my work and look forward to collaborating more with peers. ",
+      block5:
+        "📓 It has definitely re-wired the way I think and made my problem-solving journey more interesting. Somehow, I find it enjoyable to look through other people’s source code and learn how things work. This helps me code better and improve my productivity.",
+      block6:
+        "Life as a dev did not come without hard work - it is the most challenging and rewarding but I am enjoying every good (and bad) of it. It has been an interesting journey so far - delving into software development puts my growth to an upward trajectory!🚀",
+    },
+    {
+      title: "(FUN) Facts",
+      intro: "Some Random Facts About Me!",
+      render: "grid",
+      midRender: " ",
+      block1:
+        "📍 I lived in Melbourne, Gold Coast and Sydney in the past 10 years. I am orginally from the Philippines, and the tropical lady in me loves the sun and see Sydney as home in the foreseeable future.",
+      block2:
+        "🍀 I love coriander and can have it with almost any meal. I was once given a bouquet of coriander (instead of a flower) as birthday gift.",
+      block3:
+        "☕ I only ever started drinking coffee in the past 20 months - the same age as my daughter.",
+      block4:
+        "🐶 Funny coincidence, both our rescue doggos were originally named Luna. Imagine calling two Lunas at home, that would be chaos! We've renamed the younger one to Shadow.",
+      block5:
+        "🧃 I have always been so drawn to a good packaging design. I highly enjoy going to supermarkets for inspiration during my travels. I once helped design a sugarcane wine label for a friend in the Philippines.",
+      block6:
+        "🧒 I have a special place for children in my heart and used to work as a educator. I would love for one day to promote a Coding for Kids curriculum in Australia as I believe that coding is seen in our everyday lives. By using songs, games and play, kids can be equipped with skills they need in a world ruled by technology.",
+    },
+  ];
+  const [selected, setSelected] = useState(null);
 
-export default function Accordion() {
+  const content =
+    "bg-floral-white max-h-0 overflow-hidden transition-all duration-500";
+  const contentShow = "h-auto max-h-[9999px] transition-all duration-500";
 
-    const [selected, setSelected] = useState(null)
-  
-    const content = 'bg-floral-white max-h-0 overflow-hidden transition-all duration-500'
-    const contentShow = 'h-auto max-h-[9999px] transition-all duration-500'
-
-    const toggle = i => {
-        if (selected === i) {
-            return setSelected(null)
-        } 
-        setSelected(i)
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null);
     }
+    setSelected(i);
+    return true;
+  };
 
-    return (
-        <div className="wrapper flex justify-center items-center mb-24">
-          <div className="accordion w-500">
-            {jsonData.map((items, i) => (
-              items.render === "paragraph" ? (
-                <div className="item bg-floral-white mb-1 px-10 py-8">
-                  <div className="title cursor-pointer text-black flex justify-between items-center" onClick={() => toggle(i)}>
-                    <p className="text-xl md:text-2xl font-bold">{items.title}</p>
-                    <span> {`${selected === i ? '-' : '+'}`} </span>
-                  </div>
-                  <div className={selected === i ? contentShow : content}>
-                    <div>
-                      <img src={items.img} alt="description" />
-                    </div>
-                    {items.midRender === "true" ? (
-                      <>
-                        <div className="text-md md:text-xl text-purple font-bold pt-4 pb-2">{items.intro}</div>
-                        <div className="text-sm md:text-l py-2">{items.block1}</div>
-                        <div className="md:grid md:grid-cols-2 bg-purple/30">
-                            <div className="text-sm md:text-l pr-8 pt-6">{items.block2}</div>
-                            <div className="text-sm md:text-l pr-8 pt-6">{items.block3}</div>
-                            <div className="text-sm md:text-l pr-8 pt-6">{items.block4}</div>
-                            <div className="text-sm md:text-l pr-8 pt-6">{items.block5}</div>
-                        </div>
-                        <div className="text-sm md:text-l py-8">{items.block6}</div>
-                      </>
-                    ) : (
-                      <>
-                        <div className="text-md md:text-xl text-purple font-bold pt-4 pb-2">{items.intro}</div>
-                        <div className="text-sm md:text-l py-2">{items.block1}</div>
-                        <div className="text-sm md:text-l py-2">{items.block2}</div>
-                        <div className="text-sm md:text-l py-2">{items.block3}</div>
-                        <div className="text-sm md:text-l py-2">{items.block4}</div>
-                        <div className="text-sm md:text-l py-2">{items.block5}</div>
-                        <div className="text-sm md:text-l py-2">{items.block6}</div>
-                      </>
-                    )}
-                  </div>
+  return (
+    <div
+      className="wrapper flex justify-center items-center mb-24"
+      id="about-me"
+    >
+      <div className="accordion w-500">
+        {aboutMeData.map((items, i) =>
+          items.render === "paragraph" ? (
+            <div
+              className="item bg-floral-white mb-1 px-10 py-8"
+              role="button"
+              tabIndex={0}
+              onKeyDown={() => toggle(i)}
+              onClick={() => toggle(i)}
+              key={items.intro}
+            >
+              <div className="title cursor-pointer text-black flex justify-between items-center">
+                <p className="text-xl md:text-2xl font-bold">{items.title}</p>
+                <span> {`${selected === i ? "-" : "+"}`} </span>
+              </div>
+              <div className={selected === i ? contentShow : content}>
+                <div>
+                  <img src={items.img} alt="description" />
                 </div>
-              ) : (
-                <div className="item bg-floral-white mb-1 px-10 py-8">
-                  <div className="title cursor-pointer text-black flex justify-between items-center" onClick={() => toggle(i)}>
-                    <p className="text-xl md:text-2xl font-bold">{items.title}</p>
-                    <span> {`${selected === i ? '-' : '+'}`} </span>
-                  </div>
-                  <div className={selected === i ? contentShow : content}>
-                    <div>
-                      <img src={items.img} alt="description" />
+                {items.midRender === "true" ? (
+                  <>
+                    <div className="text-md md:text-xl font-bold pt-4 pb-2">
+                      {items.intro}
                     </div>
-                    <div className="text-md md:text-xl text-purple font-bold pt-4 pb-2">{items.intro}</div>
+                    <div className="text-sm md:text-l py-2">{items.block1}</div>
                     <div className="md:grid md:grid-cols-2">
-                      <div className="text-sm md:text-l pr-8 pt-6">{items.block1}</div>
-                      <div className="text-sm md:text-l pr-8 pt-6">{items.block2}</div>
-                      <div className="text-sm md:text-l pr-8 pt-6">{items.block3}</div>
-                      <div className="text-sm md:text-l pr-8 pt-6">{items.block4}</div>
-                      <div className="text-sm md:text-l pr-8 pt-6">{items.block5}</div>
-                      <div className="text-sm md:text-l pr-8 pt-6">{items.block6}</div>
+                      <Button className="text-sm md:text-l pr-8 pt-6">
+                        {items.block2}
+                      </Button>
+                      <Button className="text-sm md:text-l pr-8 pt-6">
+                        {items.block3}
+                      </Button>
+                      <Button className="text-sm md:text-l pr-8 pt-6">
+                        {items.block4}
+                      </Button>
+                      <Button className="text-sm md:text-l pr-8 pt-6">
+                        {items.block5}
+                      </Button>
                     </div>
+                    <div className="text-sm md:text-l py-8">{items.block6}</div>
+                  </>
+                ) : (
+                  <>
+                    <div className="text-md md:text-xl text-purple font-bold pt-4 pb-2">
+                      {items.intro}
+                    </div>
+                    <div className="text-sm md:text-l py-2">{items.block1}</div>
+                    <div className="text-sm md:text-l py-2">{items.block2}</div>
+                    <div className="text-sm md:text-l py-2">{items.block3}</div>
+                    <div className="text-sm md:text-l py-2">{items.block4}</div>
+                    <div className="text-sm md:text-l py-2">{items.block5}</div>
+                    <div className="text-sm md:text-l py-2">{items.block6}</div>
+                  </>
+                )}
+              </div>
+            </div>
+          ) : (
+            <div
+              className="item bg-floral-white mb-1 px-10 py-8"
+              role="button"
+              tabIndex={0}
+              onKeyDown={() => toggle(i)}
+              onClick={() => toggle(i)}
+              key={items.intro}
+            >
+              <div className="title cursor-pointer text-black flex justify-between items-center">
+                <p className="text-xl md:text-2xl font-bold">{items.title}</p>
+                <span> {`${selected === i ? "-" : "+"}`} </span>
+              </div>
+              <div className={selected === i ? contentShow : content}>
+                <div>
+                  <img src={items.img} alt="description" />
+                </div>
+                <div className="text-md md:text-xl text-purple font-bold pt-4 pb-2">
+                  {items.intro}
+                </div>
+                <div className="md:grid md:grid-cols-2">
+                  <div className="text-sm md:text-l pr-8 pt-6">
+                    {items.block1}
+                  </div>
+                  <div className="text-sm md:text-l pr-8 pt-6">
+                    {items.block2}
+                  </div>
+                  <div className="text-sm md:text-l pr-8 pt-6">
+                    {items.block3}
+                  </div>
+                  <div className="text-sm md:text-l pr-8 pt-6">
+                    {items.block4}
+                  </div>
+                  <div className="text-sm md:text-l pr-8 pt-6">
+                    {items.block5}
+                  </div>
+                  <div className="text-sm md:text-l pr-8 pt-6">
+                    {items.block6}
                   </div>
                 </div>
-              )
-            ))}
-          </div>
-        </div>
-      );
-    }      
-
+              </div>
+            </div>
+          )
+        )}
+      </div>
+    </div>
+  );
+}
