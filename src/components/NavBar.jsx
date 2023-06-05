@@ -1,5 +1,7 @@
 import { useState } from "react"
 import Button from "./Button";
+import { Link } from "react-router-dom";
+
 
 export default function NavBar() {
 
@@ -39,21 +41,21 @@ export default function NavBar() {
                 <div className={`duration-400 md:static absolute md:bg-white bg-purple/30 md:min-h-fit min-h-[20vh] left-0 ${toggleDropDown ? 'top-[9%]' : 'top-[-100%]'} md:w-auto w-full flex item-center px-8 py-6`}>
                     <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
                             <li>
-                                <a href="/" className="uppercase text-black hover:underline"> 
+                                <Link to="/about" className="uppercase text-black hover:underline"> 
                                 About 
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a href="/" className="uppercase text-black hover:underline"> 
+                                <Link to="/projects" className="uppercase text-black hover:underline"> 
                                 Projects
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a href="/" className="uppercase text-black hover:underline"> 
+                                <Link to="/contact" className="uppercase text-black hover:underline"> 
                                 Contact 
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                      </div>

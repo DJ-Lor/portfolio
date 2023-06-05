@@ -5,12 +5,8 @@ export default function Footer () {
     return (
     <div className="font-google">
 
-            {/* <div>
-                <JokeGenerator />
-            
-            </div> */}
        
-            <div className='flex items-center justify-center px-8 py-8 lg:justify-between w-[92%] mx-auto'>
+            <div className='flex items-center justify-center px-8 py-8 lg:justify-between'>
                 <div className="mr-12 hidden lg:block text-sm">
                     <p >My Portfolio 2023 ©</p>
                     <p >Created by Loreli - with love (& lots of caffeine!)</p>

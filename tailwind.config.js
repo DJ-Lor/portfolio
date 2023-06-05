@@ -51,6 +51,9 @@ module.exports = {
         '4xl': '2rem', // Four times the base font size
 
       },
+      boxShadow: {
+        'left': '-8px 0 6px -6px rgba(0, 0, 0, 0.5)',
+      },
     }
   }
 }
