@@ -34,7 +34,7 @@ export default function Accordion() {
                       <>
                         <div className="text-md md:text-xl text-purple font-bold pt-4 pb-2">{items.intro}</div>
                         <div className="text-sm md:text-l py-2">{items.block1}</div>
-                        <div className="md:grid md:grid-cols-2">
+                        <div className="md:grid md:grid-cols-2 bg-purple/30">
                             <div className="text-sm md:text-l pr-8 pt-6">{items.block2}</div>
                             <div className="text-sm md:text-l pr-8 pt-6">{items.block3}</div>
                             <div className="text-sm md:text-l pr-8 pt-6">{items.block4}</div>
@@ -81,19 +81,5 @@ export default function Accordion() {
           </div>
         </div>
       );
-              }      
+    }      
 
-
-
-
-// .content {
-//     max-height: 0;
-//     overflow: hidden;
-//     transition: all 0.5s cubic-bezier(0,1,0,1);
-// }
-
-// .content.show {
-//     height: AuthenticatorAssertionResponse;
-//     max-height: 9999;
-//     transition: all 0.5s cubic-bezier(1,0,1,0);
-// }
