@@ -29,8 +29,8 @@ export default function JokeGenerator() {
   const generateJoke = async (e) => {
     e.preventDefault();
     const jokesArray = await fetchJoke();
-    const { rJoke } = pickRandom(jokesArray);
-    setJoke(rJoke);
+    const { randomJoke } = pickRandom(jokesArray);
+    setJoke(randomJoke);
   };
 
   return (
@@ -39,7 +39,7 @@ export default function JokeGenerator() {
         <div className="grid h-screen text-xl text-black place-items-center">
           <div className="">
             <form onSubmit={generateJoke} className="w-3/4 mx-auto text-center">
-              <Button onClick={generateJoke}>Click for a Dad Joke</Button>
+              <Button onClick={generateJoke}>view my work → </Button>
             </form>
             <p className="mt-6 text-sm md:text-md lg:text-lg m-8 font-light text-center">
               {joke}

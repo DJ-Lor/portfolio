@@ -1,18 +1,20 @@
 import React from "react";
-import Footer from "../components/Footer";
 import Introduction from "../components/Introduction";
-import JokeGenerator from "../components/JokeGenerator";
 import AboutMeAccordion from "../components/AboutMeAccordion";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import DevTools from "../components/DevTools";
+import IntroCallToAction from "../components/IntroCallToAction";
 
 export default function Home() {
   return (
-    <div className="font-google px-10">
+    <div className="font-google px-10 md:px-40 lg:px-40">
       <Introduction />
-      <JokeGenerator />
+      <IntroCallToAction />
       <AboutMeAccordion />
+      <DevTools />
       <Projects />
-      <Footer />
+      <Contact />
     </div>
   );
 }

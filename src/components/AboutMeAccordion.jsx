@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "./Button";
+import Button2 from "./Button2";
 
 export default function AboutMeAccordion() {
   const aboutMeData = [
@@ -70,110 +70,130 @@ export default function AboutMeAccordion() {
   };
 
   return (
-    <div
-      className="wrapper flex justify-center items-center mb-24"
-      id="about-me"
-    >
-      <div className="accordion w-500">
-        {aboutMeData.map((items, i) =>
-          items.render === "paragraph" ? (
-            <div
-              className="item bg-floral-white mb-1 px-10 py-8"
-              role="button"
-              tabIndex={0}
-              onKeyDown={() => toggle(i)}
-              onClick={() => toggle(i)}
-              key={items.intro}
-            >
-              <div className="title cursor-pointer text-black flex justify-between items-center">
-                <p className="text-xl md:text-2xl font-bold">{items.title}</p>
-                <span> {`${selected === i ? "-" : "+"}`} </span>
-              </div>
-              <div className={selected === i ? contentShow : content}>
-                <div>
-                  <img src={items.img} alt="description" />
+    <div className="mb-96 mt-36" id="about-me">
+      <div className="flex-col flex flex-wrap mb-12 md:mb-8 text-left md:text-center">
+        <p className="text-purple text-3xl md:text-4xl font-bold mb-4 md:mb-1">
+          Me, Myself and Dev
+        </p>
+
+        <span className="md:text-center">
+          <p className="text-md lg:text-lg">
+            Get to know a little bit more about me and my journey.{" "}
+          </p>
+        </span>
+      </div>
+      <div className="wrapper flex justify-center items-center mb-24">
+        <div className="accordion w-500">
+          {aboutMeData.map((items, i) =>
+            items.render === "paragraph" ? (
+              <div
+                className="item bg-floral-white mb-1 px-10 py-8"
+                role="button"
+                tabIndex={0}
+                onKeyDown={() => toggle(i)}
+                onClick={() => toggle(i)}
+                key={items.intro}
+              >
+                <div className="title cursor-pointer text-black flex justify-between items-center">
+                  <p className="text-xl md:text-2xl font-bold">{items.title}</p>
+                  <span> {`${selected === i ? "-" : "+"}`} </span>
                 </div>
-                {items.midRender === "true" ? (
-                  <>
-                    <div className="text-md md:text-xl font-bold pt-4 pb-2">
-                      {items.intro}
-                    </div>
-                    <div className="text-sm md:text-l py-2">{items.block1}</div>
-                    <div className="md:grid md:grid-cols-2">
-                      <Button className="text-sm md:text-l pr-8 pt-6">
+                <div className={selected === i ? contentShow : content}>
+                  {items.midRender === "true" ? (
+                    <>
+                      <div className="text-md md:text-xl font-bold pt-4 pb-2 border-t border-dashed">
+                        {items.intro}
+                      </div>
+                      <div className="text-sm md:text-l py-2">
+                        {items.block1}
+                      </div>
+                      <div className="md:grid md:grid-cols-2">
+                        <Button2 className="text-sm md:text-l pr-8 pt-6">
+                          {items.block2}
+                        </Button2>
+                        <Button2 className="text-sm md:text-l pr-8 pt-6">
+                          {items.block3}
+                        </Button2>
+                        <Button2 className="text-sm md:text-l pr-8 pt-6">
+                          {items.block4}
+                        </Button2>
+                        <Button2 className="text-sm md:text-l pr-8 pt-6">
+                          {items.block5}
+                        </Button2>
+                      </div>
+                      <div className="text-sm md:text-l py-8">
+                        {items.block6}
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="text-md md:text-xl text-purple font-bold pt-4 pb-2 border-t border-dashed">
+                        {items.intro}
+                      </div>
+                      <div className="text-sm md:text-l py-2">
+                        {items.block1}
+                      </div>
+                      <div className="text-sm md:text-l py-2">
                         {items.block2}
-                      </Button>
-                      <Button className="text-sm md:text-l pr-8 pt-6">
+                      </div>
+                      <div className="text-sm md:text-l py-2">
                         {items.block3}
-                      </Button>
-                      <Button className="text-sm md:text-l pr-8 pt-6">
+                      </div>
+                      <div className="text-sm md:text-l py-2">
                         {items.block4}
-                      </Button>
-                      <Button className="text-sm md:text-l pr-8 pt-6">
+                      </div>
+                      <div className="text-sm md:text-l py-2">
                         {items.block5}
-                      </Button>
-                    </div>
-                    <div className="text-sm md:text-l py-8">{items.block6}</div>
-                  </>
-                ) : (
-                  <>
-                    <div className="text-md md:text-xl text-purple font-bold pt-4 pb-2">
-                      {items.intro}
-                    </div>
-                    <div className="text-sm md:text-l py-2">{items.block1}</div>
-                    <div className="text-sm md:text-l py-2">{items.block2}</div>
-                    <div className="text-sm md:text-l py-2">{items.block3}</div>
-                    <div className="text-sm md:text-l py-2">{items.block4}</div>
-                    <div className="text-sm md:text-l py-2">{items.block5}</div>
-                    <div className="text-sm md:text-l py-2">{items.block6}</div>
-                  </>
-                )}
-              </div>
-            </div>
-          ) : (
-            <div
-              className="item bg-floral-white mb-1 px-10 py-8"
-              role="button"
-              tabIndex={0}
-              onKeyDown={() => toggle(i)}
-              onClick={() => toggle(i)}
-              key={items.intro}
-            >
-              <div className="title cursor-pointer text-black flex justify-between items-center">
-                <p className="text-xl md:text-2xl font-bold">{items.title}</p>
-                <span> {`${selected === i ? "-" : "+"}`} </span>
-              </div>
-              <div className={selected === i ? contentShow : content}>
-                <div>
-                  <img src={items.img} alt="description" />
+                      </div>
+                      <div className="text-sm md:text-l py-2">
+                        {items.block6}
+                      </div>
+                    </>
+                  )}
                 </div>
-                <div className="text-md md:text-xl text-purple font-bold pt-4 pb-2">
-                  {items.intro}
+              </div>
+            ) : (
+              <div
+                className="item bg-floral-white mb-1 px-10 py-8"
+                role="button"
+                tabIndex={0}
+                onKeyDown={() => toggle(i)}
+                onClick={() => toggle(i)}
+                key={items.intro}
+              >
+                <div className="title cursor-pointer text-black flex justify-between items-center">
+                  <p className="text-xl md:text-2xl font-bold">{items.title}</p>
+                  <span> {`${selected === i ? "-" : "+"}`} </span>
                 </div>
-                <div className="md:grid md:grid-cols-2">
-                  <div className="text-sm md:text-l pr-8 pt-6">
-                    {items.block1}
+                <div className={selected === i ? contentShow : content}>
+                  <div className="text-md md:text-x font-bold pt-4 pb-2 border-t border-dashed">
+                    {items.intro}
                   </div>
-                  <div className="text-sm md:text-l pr-8 pt-6">
-                    {items.block2}
-                  </div>
-                  <div className="text-sm md:text-l pr-8 pt-6">
-                    {items.block3}
-                  </div>
-                  <div className="text-sm md:text-l pr-8 pt-6">
-                    {items.block4}
-                  </div>
-                  <div className="text-sm md:text-l pr-8 pt-6">
-                    {items.block5}
-                  </div>
-                  <div className="text-sm md:text-l pr-8 pt-6">
-                    {items.block6}
+                  <div className="md:grid md:grid-cols-2">
+                    <Button2 className="text-sm md:text-l pr-8 pt-6">
+                      {items.block1}
+                    </Button2>
+                    <Button2 className="text-sm md:text-l pr-8 pt-6">
+                      {items.block2}
+                    </Button2>
+                    <Button2 className="text-sm md:text-l pr-8 pt-6">
+                      {items.block3}
+                    </Button2>
+                    <Button2 className="text-sm md:text-l pr-8 pt-6">
+                      {items.block4}
+                    </Button2>
+                    <Button2 className="text-sm md:text-l pr-8 pt-6">
+                      {items.block5}
+                    </Button2>
+                    <Button2 className="text-sm md:text-l pr-8 pt-6">
+                      {items.block6}
+                    </Button2>
                   </div>
                 </div>
               </div>
-            </div>
-          )
-        )}
+            )
+          )}
+        </div>
       </div>
     </div>
   );

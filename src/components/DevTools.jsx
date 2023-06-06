@@ -126,9 +126,9 @@ export default function DevTools() {
 
   return (
     <div>
-      <div className="relative font-google flex-col flex items-center flex-wrap">
+      <div className="relative font-google flex-col flex md:items-center flex-wrap">
         <p className="relative text-purple md:text-4xl text-2xl font-bold">
-          My Toolbox & Things I Can Do
+          My Tech Toolbox
         </p>
         <p className="pt-2 pb-4">
           The skills, tools and technologies I use bringing products to life.{" "}

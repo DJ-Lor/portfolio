@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

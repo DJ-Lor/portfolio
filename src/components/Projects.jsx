@@ -12,7 +12,7 @@ export default function Projects() {
       stack: ["python", "SQLAlchemy", "postgresql", "flask"],
       repo: "https://github.com/DJ-Lor/LoreliDejesus_T2A2",
       url: "",
-      img: "/images/project-wikisearch.png",
+      img: "/images/colin-maynard-CEEhmAGpYzE-unsplash.jpg",
     },
     {
       id: 2,
@@ -25,17 +25,17 @@ export default function Projects() {
       url: "",
       img: "/images/project-wikisearch.png",
     },
-    {
-      id: 3,
-      category: "mern stack - team project",
-      name: "insert insert",
-      type: "insert insert",
-      desc: "The final project of the coding boot camp consists of team collaboration to create a full-stack web application. Insert.............. ",
-      stack: ["express.js", "react.js", "mongoDB", "node.js", "tailwind css"],
-      repo: "https://google.com",
-      url: "https://google.com",
-      img: "/images/project-stopwatch.png",
-    },
+    // {
+    //   id: 3,
+    //   category: "mern stack - team project",
+    //   name: "insert insert",
+    //   type: "insert insert",
+    //   desc: "The final project of the coding boot camp consists of team collaboration to create a full-stack web application. Insert.............. ",
+    //   stack: ["express.js", "react.js", "mongoDB", "node.js", "tailwind css"],
+    //   repo: "https://google.com",
+    //   url: "https://google.com",
+    //   img: "/images/project-stopwatch.png",
+    // },
     {
       id: 4,
       category: "python",
@@ -72,24 +72,34 @@ export default function Projects() {
   ];
 
   return (
-    <div id="projects">
-      <div className="flex flex-col md:flex-row items-center justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {projectsData.map((project) => (
-            <ProjectCard
-              key={project.name}
-              id={project.id}
-              category={project.category}
-              name={project.name}
-              type={project.type}
-              desc={project.desc}
-              stack={project.stack}
-              repo={project.repo}
-              url={project.url}
-              img={project.img}
-            />
-          ))}
-        </div>
+    <div className="mb-96 mt-36" id="projects">
+      <div className="flex-col flex flex-wrap mb-12 md:mb-8 text-left md:text-center">
+        <p className="text-purple text-3xl md:text-4xl font-bold mb-4 md:mb-1">
+          Selected Projects
+        </p>
+
+        <span className="md:text-center">
+          <p className="text-md lg:text-lg md:mb-6">
+            Sharing some of my favourite projects to date - looking forward to
+            adding more soon.{" "}
+          </p>
+        </span>
+      </div>
+      <div>
+        {projectsData.map((project) => (
+          <ProjectCard
+            key={project.name}
+            id={project.id}
+            category={project.category}
+            name={project.name}
+            type={project.type}
+            desc={project.desc}
+            stack={project.stack}
+            repo={project.repo}
+            url={project.url}
+            img={project.img}
+          />
+        ))}
       </div>
     </div>
   );
