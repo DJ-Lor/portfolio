@@ -5,14 +5,17 @@ import Button from "./Button";
 export default function NavBar() {
   const [hamburger, setHamburger] = useState("menu");
   const [toggleDropDown, setToggleDropDown] = useState(false);
+  const [logoAppear, setLogoAppear] = useState(true);
 
   function onToggleMenu() {
     if (hamburger === "menu") {
       setHamburger("close");
       setToggleDropDown(true);
+      setLogoAppear(false);
     } else {
       setHamburger("menu");
       setToggleDropDown(false);
+      setLogoAppear(true);
     }
   }
 
@@ -24,16 +27,19 @@ export default function NavBar() {
             {/* Navigation Container */}
             <div className="w-[90%] mx-auto flex wrap items-center justify-between">
               {/* Logo */}
-              <Link to="/" className="flex items-center cursor-pointer">
-                <Button />
-              </Link>
+              <div className={`${logoAppear ? "" : "hidden"}`}>
+                <Link to="/" className="flex items-center cursor-pointer">
+                  <Button />
+                </Link>
+              </div>
 
               {/* Mobile Menu Bar */}
               <button type="button" className="md:hidden">
                 <ion-icon
                   onClick={onToggleMenu}
                   name={hamburger}
-                  className="text-3xl cursor-pointer md:hidden"
+                  className="cursor-pointer md:hidden"
+                  style={{ fontSize: "3rem" }}
                 />
               </button>
 

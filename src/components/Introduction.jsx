@@ -14,7 +14,9 @@ export default function Introduction() {
         </p>
       </span>
       <span className="md:flex md:justify-center pt-8 md:pt-12 mb-48 text-left">
-        <Button>view my work → </Button>
+        <a href="#projects">
+          <Button>view my work → </Button>
+        </a>
         <Button>download my cv → </Button>
       </span>
       <div className="flex justify-center">
