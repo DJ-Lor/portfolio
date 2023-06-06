@@ -12,7 +12,7 @@ export default function Projects() {
       stack: ["python", "SQLAlchemy", "postgresql", "flask"],
       repo: "https://github.com/DJ-Lor/LoreliDejesus_T2A2",
       url: "",
-      img: "/images/colin-maynard-CEEhmAGpYzE-unsplash.jpg",
+      img: "/images/project-baby-app.png",
     },
     {
       id: 2,
@@ -45,7 +45,7 @@ export default function Projects() {
       stack: ["python", "command line", "JSON"],
       repo: "https://github.com/DJ-Lor/LoreliDejesus_T1A3",
       url: "",
-      img: "images/project-stopwatch.png",
+      img: "images/project-realestate.png",
     },
     {
       id: 5,
@@ -72,7 +72,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="mb-96 mt-36" id="projects">
+    <div className="pt-12 mb-36 mt-36" id="projects">
       <div className="flex-col flex flex-wrap mb-12 md:mb-8 text-left md:text-center">
         <p className="text-purple text-3xl md:text-4xl font-bold mb-4 md:mb-1">
           Selected Projects
@@ -100,6 +100,24 @@ export default function Projects() {
             img={project.img}
           />
         ))}
+      </div>
+      <div className="flex justify-center">
+        <a href="#contact">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6 md:w-7 md:h-7 animate-bounce bg-purple/30 rounded-full"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </a>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 
 export default function Footer() {
   return (
-    <div className="font-google">
+    <div className="font-google px-8 py-4">
       <div className="flex items-center justify-center px-8 py-8 lg:justify-between">
         <div className="mr-12 hidden lg:block text-sm">
           <p>My Portfolio 2023 ©</p>
@@ -16,6 +16,8 @@ export default function Footer() {
               url="https://www.linkedin.com/in/loreli-de-jesus-084b571a5/"
               bgColor="#FFF8F0"
               fgColor="black"
+              target="_blank"
+              rel="noopener noreferrer"
             />
           </div>
 
@@ -24,6 +26,8 @@ export default function Footer() {
               url="https://github.com/DJ-Lor"
               bgColor="#FFF8F0"
               fgColor="black"
+              target="_blank"
+              rel="noopener noreferrer"
             />
           </div>
 
@@ -33,6 +37,8 @@ export default function Footer() {
               network="whatsapp"
               bgColor="#FFF8F0"
               fgColor="black"
+              target="_blank"
+              rel="noopener noreferrer"
             />
           </div>
 
@@ -41,6 +47,8 @@ export default function Footer() {
               url="mailto:dejesus.loreli@gmail.com"
               bgColor="#FFF8F0"
               fgColor="black"
+              target="_blank"
+              rel="noopener noreferrer"
             />
           </div>
         </div>

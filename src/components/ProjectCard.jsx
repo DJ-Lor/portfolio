@@ -23,11 +23,13 @@ export default function ProjectCard({
           <img
             src={img}
             alt="project-img"
-            className="object-cover h-80 w-full"
+            className="object-cover h-80 w-full rounded opacity-80"
           />
         </div>
         <div className="col-span-2 md:col-span-1 md:px-5">
-          <h3 className="text-lg md:text-xl mb-4 font-semibold">{name}</h3>
+          <h3 className="text-lg md:text-xl mb-4 font-semibold text-purple">
+            {name}
+          </h3>
           <h4 className="text-lg md:text-xl mb-4 font-semibold">
             Type: {type}
           </h4>
@@ -43,10 +45,10 @@ export default function ProjectCard({
           </p>
         </div>
         <div className="row-span-2 col-span-2">
-          <p className="mb-2 md:mb-3 mt-2 md:mt-3">{desc}</p>
+          <p className="mb-2 md:mb-3 mt-2 md:mt-3 text-md lg:text-lg">{desc}</p>
           <span>
-            <Button onClick={goUrl(repo)}>Source Code</Button>
-            {url ? <Button onClick={goUrl(url)}>Live</Button> : null}
+            <Button onClick={() => goUrl(repo)}>Source Code</Button>
+            {url ? <Button onClick={() => goUrl(url)}>Live</Button> : null}
           </span>
         </div>
       </div>

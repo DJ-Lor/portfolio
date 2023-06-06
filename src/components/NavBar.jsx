@@ -17,7 +17,7 @@ export default function NavBar() {
   }
 
   return (
-    <div className="h-64 w-full">
+    <div className="h-64 w-full" id="nav">
       <div className="font-google text-xl mt-10">
         <header className="bg-white">
           <nav className="py-4 sm:px4">
@@ -47,7 +47,7 @@ export default function NavBar() {
                   <li>
                     <a
                       href="#about-me"
-                      className="uppercase text-black hover:underline"
+                      className="uppercase text-black hover:underline hover:text-purple"
                     >
                       About
                     </a>
@@ -56,7 +56,7 @@ export default function NavBar() {
                   <li>
                     <a
                       href="#projects"
-                      className="uppercase text-black hover:underline"
+                      className="uppercase text-black hover:underline hover:text-purple"
                     >
                       Projects
                     </a>
@@ -65,7 +65,7 @@ export default function NavBar() {
                   <li>
                     <a
                       href="#contact"
-                      className="uppercase text-black hover:underline"
+                      className="uppercase text-black hover:underline hover:text-purple"
                     >
                       Contact
                     </a>
