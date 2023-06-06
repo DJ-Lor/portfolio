@@ -81,7 +81,7 @@ export default function Projects() {
         <span className="md:text-center">
           <p className="text-md lg:text-lg md:mb-6">
             Sharing some of my favourite projects to date - looking forward to
-            adding more soon.{" "}
+            adding more soon♥{" "}
           </p>
         </span>
       </div>

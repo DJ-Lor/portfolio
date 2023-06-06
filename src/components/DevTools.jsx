@@ -131,7 +131,7 @@ export default function DevTools() {
           My Tech Toolbox
         </p>
         <p className="pt-2 pb-4">
-          The skills, tools and technologies I use bringing products to life.{" "}
+          The skills, tools and technologies I use bringing products to life🧰{" "}
         </p>
       </div>
 

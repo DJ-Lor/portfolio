@@ -78,7 +78,7 @@ export default function AboutMeAccordion() {
 
         <span className="md:text-center">
           <p className="text-md lg:text-lg">
-            Get to know a little bit more about me and my journey.{" "}
+            Get to know a little bit more about me and my journey🚀{" "}
           </p>
         </span>
       </div>
@@ -130,23 +130,23 @@ export default function AboutMeAccordion() {
                       <div className="text-md md:text-xl text-purple font-bold pt-4 pb-2 border-t border-dashed">
                         {items.intro}
                       </div>
-                      <div className="text-sm md:text-l py-2">
-                        {items.block1}
-                      </div>
-                      <div className="text-sm md:text-l py-2">
-                        {items.block2}
-                      </div>
-                      <div className="text-sm md:text-l py-2">
-                        {items.block3}
-                      </div>
-                      <div className="text-sm md:text-l py-2">
-                        {items.block4}
-                      </div>
-                      <div className="text-sm md:text-l py-2">
-                        {items.block5}
-                      </div>
-                      <div className="text-sm md:text-l py-2">
-                        {items.block6}
+                      <div className="md:flex">
+                        <div className="md:flex-1">
+                          <div className="text-sm md:text-l py-2">
+                            {items.block1}
+                          </div>
+                          <div className="text-sm md:text-l py-2">
+                            {items.block2}
+                          </div>
+                          <div className="text-sm md:text-l py-4">
+                            {items.block3}
+                          </div>
+                        </div>
+                        <img
+                          src="images/profile-loreli.png"
+                          alt="profile-loreli"
+                          className="h-64 w-64 rounded-full md:ml-10 md:mr-12"
+                        />
                       </div>
                     </>
                   )}
