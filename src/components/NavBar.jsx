@@ -34,7 +34,7 @@ export default function NavBar() {
               </div>
 
               {/* Mobile Menu Bar */}
-              <button type="button" className="md:hidden">
+              <button type="button" className="md:hidden z-20">
                 <ion-icon
                   onClick={onToggleMenu}
                   name={hamburger}
@@ -49,7 +49,7 @@ export default function NavBar() {
                   toggleDropDown ? "top-[9%]" : "top-[-100%]"
                 } md:w-auto w-full flex item-center px-8 py-6`}
               >
-                <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
+                <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6 pt-4">
                   <li>
                     <a
                       href="#about-me"
