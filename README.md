@@ -30,6 +30,7 @@ I wanted to inject some fun into my portfolio and incorporated an "easter-egg-hu
 ### 💪🏼  Future Improvements
 
 - [ ] Individual page for every `Project` 
+- [ ] Adding audio into the game section
 - [ ] Look into incorporating Nextjs 
 - [ ] Accessibility improvements
 - [ ] Unit testing integrations 
