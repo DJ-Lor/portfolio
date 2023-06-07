@@ -22,7 +22,7 @@ export default function Contact() {
         </div>
         <div className="hidden md:flex md:justify-center">
           <img
-            src="images/profile-loreli.png"
+            src="images/profile-loreli-desk.png"
             alt="profile-loreli"
             className="h-64 w-64 rounded-full md:ml-10 md:mr-12"
           />
