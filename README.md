@@ -8,16 +8,17 @@ This project is my second personal portfolio since starting my coding journey. T
 
 ### 🤔 Challenge
 
-There were so many things I wanted to convey, both from a technical and non-technical standpoint, for this project. Overall, I wanted to ensure that my portfolio will communicate a clear message in terms of design, build and communication - that is, to showcase my skills and capabilities as a competent Full Stack Engineer. 
+There were so many things I wanted to convey, both from a technical and non-technical standpoint, for this project. Overall, I wanted to ensure that my portfolio will communicate a clear message in terms of design, build and communication - that is, to showcase my skills and capabilities as a competent Full Stack Engineer. At the same time, it is important for me to also showcase who am I as an individual - this sets me apart from other talents in the industry. 
 
 ### 💡 Solution
 
-I had initially only planned to use `React CSS` and `CSS`, however, I wanted to take this opportunity to further grow my skillset and started working with `Tailwind CSS`. I heard great things about it and personally, found my work efficiency improving when it comes to styling on the same file where my source code is. I have also looked into utilising `Nextjs` for the first time for this project. Its speed due to its server-side rendering functionality has been considered highly, most especially for static websites.
+I had initially only planned to use `React CSS` and `CSS`, however, I wanted to take this opportunity to further grow my skillset and started working with `Tailwind CSS`. I heard great things about it and personally, found my work efficiency improving when it comes to styling on the same file where my source code is. 
+
+I wanted to inject some fun into my portfolio and incorporated an "easter-egg-hunt" fun by implementing a full-page takeover game when my logo is clicked. I believe this shows my skill as a developer, while at the same time, giving a smile to people's faces. Give it a try! :) 
 
 
 ### 🧰 My Tech Toolbox (Stack, Tools & NPM Packages)
 
-- Next.js 
 - Node.js 
 - Tailwind CSS
 - React-icons
@@ -29,10 +30,10 @@ I had initially only planned to use `React CSS` and `CSS`, however, I wanted to 
 ### 💪🏼  Future Improvements
 
 - [ ] Individual page for every `Project` 
+- [ ] Look into incorporating Nextjs 
 - [ ] Accessibility improvements
-- [ ] Utilising React-hooks for an interactive portion of the site (possibly a game or fun api)
 - [ ] Unit testing integrations 
 
 
-<sub>**Created by Loreli - with love (& lots of caffeine!) © 2022**</sub>
+<sub>**Created by Loreli from scratch - with love (& lots of caffeine!) © 2023**</sub>
 
