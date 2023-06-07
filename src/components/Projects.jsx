@@ -12,7 +12,7 @@ export default function Projects() {
       stack: ["python", "SQLAlchemy", "postgresql", "flask"],
       repo: "https://github.com/DJ-Lor/LoreliDejesus_T2A2",
       url: "",
-      img: "/images/project-baby-app.png",
+      img: `${process.env.PUBLIC_URL}/images/project-baby-app.png`,
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export default function Projects() {
       stack: ["react", "javascript", "tailwind css"],
       repo: "https://github.com/DJ-Lor/wikisearch",
       url: "",
-      img: "/images/project-wikisearch.png",
+      img: `${process.env.PUBLIC_URL}/images/project-wikisearch.png`,
     },
     // {
     //   id: 3,
@@ -45,7 +45,7 @@ export default function Projects() {
       stack: ["python", "command line", "JSON"],
       repo: "https://github.com/DJ-Lor/LoreliDejesus_T1A3",
       url: "",
-      img: "images/project-realestate.png",
+      img: `${process.env.PUBLIC_URL}/images/project-realestate.png`,
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ export default function Projects() {
       stack: ["react.js", "bootstrap"],
       repo: "https://github.com/DJ-Lor/stopwatch/tree/main",
       url: "",
-      img: "/images/project-stopwatch.png",
+      img: `${process.env.PUBLIC_URL}/images/project-stopwatch.png`,
     },
     {
       id: 6,
@@ -67,7 +67,7 @@ export default function Projects() {
       stack: ["react.js", "tailwind css"],
       repo: "https://github.com/DJ-Lor/portfolio",
       url: "",
-      img: "/images/project-portfolio.png",
+      img: `${process.env.PUBLIC_URL}/images/project-portfolio.png`,
     },
   ];
 

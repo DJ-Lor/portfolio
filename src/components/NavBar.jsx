@@ -40,7 +40,7 @@ export default function NavBar() {
                     onClick={onClickLogo}
                   >
                     <img
-                      src="images/profile-loreli.png"
+                      src={`${process.env.PUBLIC_URL}/images/profile-loreli.png`}
                       alt="profile-loreli"
                       className="h-24 w-24 rounded-full md:ml-10 md:mr-12 transition-transform duration-300 transform hover:scale-150"
                     />
