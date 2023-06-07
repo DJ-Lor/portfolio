@@ -35,5 +35,5 @@ I wanted to inject some fun into my portfolio and incorporated an "easter-egg-hu
 - [ ] Unit testing integrations 
 
 
-<sub>**Created by Loreli from scratch - with love (& lots of caffeine!) © 2023**</sub>
+<sub>**Created by Loreli from scratch - with love (& lots of caffeine!) 2023 ©**</sub>
 
