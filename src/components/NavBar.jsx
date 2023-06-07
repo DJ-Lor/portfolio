@@ -107,8 +107,8 @@ export default function NavBar() {
           <ion-icon
             onClick={onClickLogo}
             name="close"
-            className="cursor-pointer"
-            style={{ fontSize: "3rem" }}
+            className="cursor-pointer bg-floral-white"
+            style={{ fontSize: "3rem", color: "floralwhite" }}
           />
         </button>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

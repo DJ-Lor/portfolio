@@ -26,7 +26,7 @@ export default function Board({ xIsNext, squares, onPlay, indices }) {
   let draw;
 
   if (winner) {
-    status = "Game Completed";
+    status = "Game Complete!";
   } else if (indices === 9 && !winner) {
     status = "It's a draw";
     draw = true;
@@ -36,11 +36,13 @@ export default function Board({ xIsNext, squares, onPlay, indices }) {
 
   return (
     <div>
-      <div className="status">{status}</div>
+      <div className="status text-3xl md:text-4xl pb-4 text-floral-white">
+        {winner || draw ? null : status}
+      </div>
 
-      <div>
-        {winner ? `CONGRATULATIONS! PLAYER ${winner} WINS!` : null}
-        {!winner && draw ? `NO WINNER. TRY AGAIN` : null}
+      <div className="text-3xl md:text-4xl text-floral-white mb-8">
+        {winner ? `PLAYER ${winner} WINS!🏆` : null}
+        {!winner && draw ? `NO WINNER. TRY AGAIN 🙁` : null}
       </div>
 
       <div className="board-row">

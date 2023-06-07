@@ -33,10 +33,16 @@ export default function GameParent() {
 
       <div className="new-game">
         {currentMove === 9 || CalculateWinner(currentSquares) ? (
-          <button type="button" onClick={onRestartGame}>
+          // eslint-disable-next-line jsx-a11y/anchor-is-valid
+          <a
+            href="#"
+            type="button"
+            onClick={onRestartGame}
+            className="mt-8 text-black text-xl items-center font-bold hover:text-purple bg-sunset border-l-4 border-b-4 rounded-full flex justify-center h-20 w-26"
+          >
             {" "}
             Restart Game{" "}
-          </button>
+          </a>
         ) : null}
       </div>
     </div>

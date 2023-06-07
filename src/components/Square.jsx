@@ -5,12 +5,11 @@ export default function Square({ value, onSquareClick }) {
   return (
     <button
       type="button"
-      className="bg-white hover:bg-gray-100 text-gray-800 
-      font-semibold py-2 px-4 border border-gray-400 shadow h-9 w-9"
+      className="bg-floral-white text-3xl
+      font-semibold py-2 px-4 border shadow h-16 w-16 md:h-36 md:w-36"
       onClick={onSquareClick}
     >
-      {" "}
-      {value}{" "}
+      {value || "\u2060"}
     </button>
   );
 }

@@ -55,7 +55,7 @@ export default function AboutMeAccordion() {
         "🧒 I have a special place for children in my heart and used to work as a educator. I would love for one day to promote a Coding for Kids curriculum in Australia as I believe that coding is seen in our everyday lives. By using songs, games and play, kids can be equipped with skills they need in a world ruled by technology.",
     },
   ];
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(0);
 
   const content =
     "bg-floral-white max-h-0 overflow-hidden transition-all duration-500";
