@@ -3,9 +3,9 @@ import Button from "./Button";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="bg-floral-white p-4">
       <div className="md:grid md:grid-cols-2 md:pt-24 md:pb-20" id="contact">
-        <div className="md:text-left mb-24 md:pl-20" id="contact">
+        <div className="md:text-left mb-24 md:pl-20 ">
           <p className="text-purple text-3xl md:text-4xl font-bold mb-4 md:mb-6">
             Get in Touch
           </p>
@@ -21,20 +21,11 @@ export default function Contact() {
           <Button>Say Hello!</Button>
         </div>
         <div className="hidden md:flex md:justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-64 h-64 text-purple"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-            />
-          </svg>
+          <img
+            src="images/profile-loreli.png"
+            alt="profile-loreli"
+            className="h-64 w-64 rounded-full md:ml-10 md:mr-12"
+          />
         </div>
       </div>
       <div className="flex flex-col items-center">

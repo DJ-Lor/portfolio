@@ -14,27 +14,6 @@ export default function GameParent() {
     setCurrentMove(nextHistory.length - 1);
   }
 
-  function jumpTo(nextMove) {
-    setCurrentMove(nextMove);
-  }
-
-  const moves = history.map((squares, move) => {
-    let description;
-    if (move > 0) {
-      description = `Go to move #${move}`;
-    } else {
-      description = "Go to game start";
-    }
-    return (
-      // eslint-disable-next-line react/no-array-index-key
-      <li key={move}>
-        <button type="button" onClick={() => jumpTo(move)}>
-          {description}
-        </button>
-      </li>
-    );
-  });
-
   function onRestartGame() {
     setHistory([Array(9).fill(null)]);
     setCurrentMove(0);
@@ -52,14 +31,12 @@ export default function GameParent() {
         />
       </div>
 
-      <div className="game-info">
-        <ol>{moves}</ol>
-      </div>
-
       <div className="new-game">
         {currentMove === 9 || CalculateWinner(currentSquares) ? (
-          // eslint-disable-next-line react/button-has-type
-          <button onClick={onRestartGame}> Restart Game </button>
+          <button type="button" onClick={onRestartGame}>
+            {" "}
+            Restart Game{" "}
+          </button>
         ) : null}
       </div>
     </div>
