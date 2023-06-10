@@ -39,11 +39,13 @@ export default function NavBar() {
                     className="flex items-center cursor-pointer"
                     onClick={onClickLogo}
                   >
-                    <img
-                      src={`${process.env.PUBLIC_URL}/images/profile-loreli.png`}
-                      alt="profile-loreli"
-                      className="h-24 w-24 rounded-full md:ml-10 md:mr-12 transition-transform duration-300 transform hover:scale-150"
-                    />
+                    <div className="transition-transform duration-300 transform hover:scale-150">
+                      <img
+                        src={`${process.env.PUBLIC_URL}/images/profile-loreli.png`}
+                        alt="profile-loreli"
+                        className="h-24 w-24 rounded-full md:ml-10 md:mr-12 animate-pulse"
+                      />
+                    </div>
                   </button>
                 </div>
                 {/* Pass clickLogo as prop to Introduction component */}

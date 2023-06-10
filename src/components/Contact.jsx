@@ -13,7 +13,7 @@ export default function Contact() {
           <span className="md:text-left">
             <p className="text-md lg:text-lg pb-3 md:pb-8">
               I am always up to connect, chat and expand my network. Whether it
-              is is is is is is for a project need, collaboration or you just
+              is for a project need, collaboration or you just to connect, my
               inbox is always open. I try to get back to messages within 48
               hours!✨{" "}
             </p>
