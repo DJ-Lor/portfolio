@@ -1,8 +1,18 @@
 import { React } from "react";
 import Button from "./Button";
-
 // eslint-disable-next-line react/prop-types
 export default function Introduction() {
+  const onButtonClickPdfDownload = () => {
+    fetch("Fullstack Developer CV - Loreli De Jesus.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        const alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Fullstack Developer CV - Loreli De Jesus.pdf";
+        alink.click();
+      });
+    });
+  };
   return (
     <div>
       <span className="">
@@ -20,7 +30,9 @@ export default function Introduction() {
             <a href="#projects">
               <Button>view my work → </Button>
             </a>
-            <Button>download my cv → </Button>
+            <Button onClick={onButtonClickPdfDownload}>
+              download my cv →{" "}
+            </Button>
           </span>
           <div className="flex justify-center">
             <a href="#about-me">
