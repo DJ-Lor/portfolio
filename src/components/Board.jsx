@@ -1,4 +1,6 @@
 import React from "react";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import Confetti from "react-confetti";
 import Square from "./Square";
 import calculateWinner from "../helper/calculateWinner";
 
@@ -36,12 +38,27 @@ export default function Board({ xIsNext, squares, onPlay, indices }) {
 
   return (
     <div>
+      {winner ? (
+        <div>
+          <Confetti
+            width="5000"
+            height="5000"
+            numberOfPieces={500}
+            run
+            style={{ left: "-500px", top: "-500px" }}
+          />
+        </div>
+      ) : null}
       <div className="status text-3xl md:text-4xl pb-4 text-floral-white">
         {winner || draw ? null : status}
       </div>
 
       <div className="text-3xl md:text-4xl text-floral-white mb-8">
-        {winner ? `PLAYER ${winner} WINS!🏆` : null}
+        {winner ? (
+          <div className="text-3xl md:text-4xl text-floral-white mb-8">
+            PLAYER {winner} WINS!🏆
+          </div>
+        ) : null}
         {!winner && draw ? `NO WINNER. TRY AGAIN 🙁` : null}
       </div>
 

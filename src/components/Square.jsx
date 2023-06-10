@@ -5,7 +5,7 @@ export default function Square({ value, onSquareClick }) {
   return (
     <button
       type="button"
-      className="relative bg-floral-white text-3xl
+      className="relative bg-floral-white text-2xl md:text-3xl
       font-semibold py-2 px-4 border shadow h-14 w-14 md:h-36 md:w-36"
       onClick={onSquareClick}
     >

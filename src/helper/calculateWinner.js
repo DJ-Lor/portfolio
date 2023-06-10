@@ -9,7 +9,6 @@ export default function calculateWinner(squares) {
     [0, 4, 8],
     [2, 4, 6],
   ];
-
   // eslint-disable-next-line no-plusplus
   for (let i = 0; i < winningRows.length; i++) {
     const [a, b, c] = winningRows[i];

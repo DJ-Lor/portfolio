@@ -145,7 +145,7 @@ export default function AboutMeAccordion() {
                         <img
                           src={`${process.env.PUBLIC_URL}/images/profile-loreli.png`}
                           alt="profile-loreli"
-                          className="h-64 w-64 rounded-full md:ml-10 md:mr-12"
+                          className="h-54 w-54 md:h-64 md:w-64 rounded-full md:ml-10 md:mr-12"
                         />
                       </div>
                     </>

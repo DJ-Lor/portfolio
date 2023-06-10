@@ -23,6 +23,7 @@ I wanted to inject some fun into my portfolio and incorporated an "easter-egg-hu
 - Tailwind CSS
 - React-icons
 - React-fontawesome
+- React-confetti
 - Heroicons (svg icons by Tailwind)
 - Ion-icons
 - Google Fonts 
@@ -31,6 +32,7 @@ I wanted to inject some fun into my portfolio and incorporated an "easter-egg-hu
 
 - [ ] Individual page for every `Project` 
 - [ ] Adding audio into the game section
+- [ ] Fix game winner confetti viewport 
 - [ ] Look into incorporating Nextjs 
 - [ ] Accessibility improvements
 - [ ] Unit testing integrations 

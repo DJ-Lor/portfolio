@@ -50,7 +50,7 @@ export default function NavBar() {
                 </div>
                 {/* Pass clickLogo as prop to Introduction component */}
                 {/* Mobile Menu Bar */}
-                <button type="button" className="md:hidden z-20">
+                <button type="button" className="md:hidden z-10">
                   <ion-icon
                     onClick={onToggleMenu}
                     name={hamburger}
