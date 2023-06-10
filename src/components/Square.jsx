@@ -6,7 +6,7 @@ export default function Square({ value, onSquareClick }) {
     <button
       type="button"
       className="bg-floral-white text-3xl
-      font-semibold py-2 px-4 border shadow h-16 w-16 md:h-36 md:w-36"
+      font-semibold py-2 px-4 border shadow h-14 w-14 md:h-36 md:w-36"
       onClick={onSquareClick}
     >
       {value || "\u2060"}

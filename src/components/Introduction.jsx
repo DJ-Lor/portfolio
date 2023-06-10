@@ -3,15 +3,18 @@ import Button from "./Button";
 // eslint-disable-next-line react/prop-types
 export default function Introduction() {
   const onButtonClickPdfDownload = () => {
-    fetch("Fullstack Developer CV - Loreli De Jesus.pdf").then((response) => {
-      response.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        const alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "Fullstack Developer CV - Loreli De Jesus.pdf";
-        alink.click();
-      });
-    });
+    fetch("public/Fullstack Developer CV - Loreli De Jesus.pdf").then(
+      (response) => {
+        response.blob().then((blob) => {
+          const fileURL = window.URL.createObjectURL(blob);
+          const alink = document.createElement("a");
+          alink.href = fileURL;
+          alink.download =
+            "public/Fullstack Developer CV - Loreli De Jesus.pdf";
+          alink.click();
+        });
+      }
+    );
   };
   return (
     <div>
