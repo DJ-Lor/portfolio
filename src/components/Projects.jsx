@@ -55,7 +55,7 @@ export default function Projects() {
       desc: "The react stop watch was created with the aim of utilising the useState react hook and styled by using bootstrap buttons.",
       stack: ["react.js", "bootstrap"],
       repo: "https://github.com/DJ-Lor/stopwatch/tree/main",
-      url: "",
+      url: "https://dj-lor.github.io/stopwatch/",
       img: `${process.env.PUBLIC_URL}/images/project-stopwatch.png`,
     },
     {
@@ -66,7 +66,7 @@ export default function Projects() {
       desc: "The first project in my course was creating a website with only HTML5 and CSS3. Since then, my coding journey has evolved and I revamped my website using React.js and Tailwind CSS. What I would like visitors to take away is a clean, relevant and informative experience from my website. I am very excited with how this has presented. However, I do understand that my portfolio will continue to be a work-in-progress as I continue my learning journey in this field. I am aware that there is much room for improvement and this portfolio will continue to be under development.",
       stack: ["react.js", "tailwind css"],
       repo: "https://github.com/DJ-Lor/portfolio",
-      url: "",
+      url: "https://dj-lor.github.io/portfolio/",
       img: `${process.env.PUBLIC_URL}/images/project-portfolio.png`,
     },
   ];
