@@ -43,7 +43,7 @@ export default function NavBar() {
                       <img
                         src={`${process.env.PUBLIC_URL}/images/profile-loreli-click.png`}
                         alt="profile-loreli"
-                        className="h-24 w-24 rounded-full md:ml-10 md:mr-12 animate-bounce md:animate-pulse"
+                        className="h-24 w-24 rounded-full md:ml-10 md:mr-12 animate-bounce"
                       />
                     </div>
                   </button>

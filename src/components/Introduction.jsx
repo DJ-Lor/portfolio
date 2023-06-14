@@ -30,7 +30,7 @@ export default function Introduction() {
               Junior Full Stack Developer & Digital Marketer.{" "}
             </p>
           </span>
-          <span className="md:flex md:justify-center pt-8 md:pt-12 mb-48 text-left">
+          <span className="md:flex md:justify-center pt-8 md:pt-12 mb-24 md:mb-48 text-left">
             <a href="#projects">
               <Button>view my work → </Button>
             </a>

@@ -70,7 +70,7 @@ export default function AboutMeAccordion() {
   };
 
   return (
-    <div className="pt-44 pb-48 md:pt-36 md:pb-36" id="about-me">
+    <div className="pt-24 pb-48 md:pt-24 md:pb-36" id="about-me">
       <div className="flex-col flex flex-wrap mb-12 md:mb-8 text-left md:text-center">
         <p className="text-purple text-3xl md:text-4xl font-bold mb-4 md:mb-1">
           Me, Myself and Dev
