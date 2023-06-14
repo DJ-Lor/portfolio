@@ -33,17 +33,6 @@ export default function Footer() {
 
           <div>
             <SocialIcon
-              url="https://wa.me/+61416563389"
-              network="whatsapp"
-              bgColor="#FFF8F0"
-              fgColor="black"
-              target="_blank"
-              rel="noopener noreferrer"
-            />
-          </div>
-
-          <div>
-            <SocialIcon
               url="mailto:dejesus.loreli@gmail.com"
               bgColor="#FFF8F0"
               fgColor="black"

@@ -2,6 +2,9 @@ import React from "react";
 import Button from "./Button";
 
 export default function Contact() {
+  const goContact = () => {
+    window.open("mailto:dejesus.loreli@gmail.com", "_blank");
+  };
   return (
     <div className="bg-floral-white p-4">
       <div className="md:grid md:grid-cols-2 md:pt-24 md:pb-20" id="contact">
@@ -18,7 +21,7 @@ export default function Contact() {
               hours!✨{" "}
             </p>
           </span>
-          <Button>Say Hello!</Button>
+          <Button onClick={() => goContact()}>Say Hello!</Button>
         </div>
         <div className="hidden md:flex md:justify-center">
           <img
