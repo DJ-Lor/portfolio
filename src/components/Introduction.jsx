@@ -3,17 +3,19 @@ import Button from "./Button";
 // eslint-disable-next-line react/prop-types
 export default function Introduction() {
   const onButtonClickPdfDownload = () => {
-    fetch(`${process.env.PUBLIC_URL}/loreli_cv.pdf`).then((response) => {
-      // eslint-disable-next-line no-console
-      console.log(response);
-      response.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        const alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = `${process.env.PUBLIC_URL}/loreli_cv.pdf`;
-        alink.click();
-      });
-    });
+    fetch(`${process.env.PUBLIC_URL}/loreli_de_jesus_resume.pdf`).then(
+      (response) => {
+        // eslint-disable-next-line no-console
+        console.log(response);
+        response.blob().then((blob) => {
+          const fileURL = window.URL.createObjectURL(blob);
+          const alink = document.createElement("a");
+          alink.href = fileURL;
+          alink.download = `${process.env.PUBLIC_URL}/loreli_cv.pdf`;
+          alink.click();
+        });
+      }
+    );
   };
   return (
     <div>
