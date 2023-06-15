@@ -5,7 +5,7 @@ export default function Button2({ onClick, children }) {
   return (
     <button
       type="button"
-      className="text-sm md:text-l relative px-6 py-3 font-bold text-black group m-4 "
+      className="text-xs text-left md:text-l relative px-6 py-3 font-bold text-black group m-4 "
       onClick={onClick}
     >
       <span

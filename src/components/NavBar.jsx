@@ -41,7 +41,7 @@ export default function NavBar() {
                   >
                     <div className="transition-transform duration-300 transform hover:scale-150">
                       <img
-                        src={`${process.env.PUBLIC_URL}/images/profile-loreli-click.png`}
+                        src={`${process.env.PUBLIC_URL}/images/profile-loreli-check.png`}
                         alt="profile-loreli"
                         className="h-24 w-24 rounded-full md:ml-10 md:mr-12 animate-bounce"
                       />
