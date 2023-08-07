@@ -4,7 +4,7 @@
  → version 1.1
 ```
 
-This project is my second personal portfolio since starting my coding journey. The [first portfolio](https://github.com/DJ-Lor/lorelidejesus_T1A2) was built using only HTML5 and CSS during my first term - and here we are on my last term welcoming my updated version for my work. 
+This project is my second [second portfolio](https://dj-lor.github.io/portfolio/) since starting my coding journey. The [first portfolio](https://github.com/DJ-Lor/lorelidejesus_T1A2) was built using only HTML5 and CSS during my first term - and here we are on my last term welcoming my updated version for my work. 
 
 ### 🤔 Challenge
 
