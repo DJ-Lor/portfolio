@@ -29,7 +29,7 @@ export default function Projects() {
       id: 3,
       category: "fullstack app",
       name: "Shareharvest",
-      type: "mern fullstack app",
+      type: "MERN Fullstack Application",
       desc: "The purpose of ShareHarvest is to share homegrown produce, homemade things and excess items that might be useful for someone else. It is also an opportunity to create community connection, share knowledge and inspiration, reduce waste and encourage eating seasonal, locally produced food. She more, waste less. ",
       stack: [
         "express.js",
