@@ -42,7 +42,7 @@ export default function Projects() {
       ],
       repo: "https://github.com/DJ-Lor/shareharvest-front-end-react",
       url: "https://shareharvest.onrender.com/",
-      img: "/images/project-shareharvest.png",
+      img: `${process.env.PUBLIC_URL}//images/project-shareharvest.png`,
     },
     {
       id: 4,
