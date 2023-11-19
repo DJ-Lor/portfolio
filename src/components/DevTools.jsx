@@ -153,9 +153,18 @@ export default function DevTools() {
             className="relative w-28 h-28 md:w-40 md:h-40 flex items-center flex-col text-purple/80"
             key={dev.name}
           >
-            <i
+            {/* <i
               className={`${dev.icon ? dev.icon : dev.img} text-xl md:text-5xl`}
-            />
+            /> */}
+            {dev.icon ? (
+              <i className={`${dev.icon} text-xl md:text-5xl`} />
+            ) : (
+              <img
+                src={dev.img}
+                alt={dev.name}
+                className="text-xl md:text-5xl"
+              />
+            )}
             <h2>{dev.name}</h2>
           </div>
         ))}
