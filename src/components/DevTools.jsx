@@ -124,13 +124,15 @@ export default function DevTools() {
     },
     {
       name: "Data Studio",
-      icon: "devicon-datastudio-plain",
       img: "https://www.cdnlogo.com/logos/g/71/google-data-studio.svg",
     },
     {
       name: "Google Analytics",
-      icon: "devicon-ga-plain",
       img: "https://www.cdnlogo.com/logos/g/82/google-analytics.svg",
+    },
+    {
+      name: "Datorama",
+      img: `${process.env.PUBLIC_URL}/images/datorama.png`,
     },
   ];
 
@@ -151,7 +153,9 @@ export default function DevTools() {
             className="relative w-28 h-28 md:w-40 md:h-40 flex items-center flex-col text-purple/80"
             key={dev.name}
           >
-            <i className={`${dev.img} text-xl md:text-5xl`} />
+            <i
+              className={`${dev.icon ? dev.icon : dev.img} text-xl md:text-5xl`}
+            />
             <h2>{dev.name}</h2>
           </div>
         ))}
