@@ -122,6 +122,16 @@ export default function DevTools() {
       icon: "devicon-slack-plain",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg",
     },
+    {
+      name: "Data Studio",
+      icon: "devicon-datastudio-plain",
+      img: "https://www.cdnlogo.com/logos/g/71/google-data-studio.svg",
+    },
+    {
+      name: "Google Analytics",
+      icon: "devicon-ga-plain",
+      img: "https://www.cdnlogo.com/logos/g/82/google-analytics.svg",
+    },
   ];
 
   return (
