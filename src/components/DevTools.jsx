@@ -3,19 +3,41 @@ import React from "react";
 export default function DevTools() {
   const devTools = [
     {
+      name: "Studio",
+      img: "https://www.cdnlogo.com/logos/g/71/google-data-studio.svg",
+    },
+    {
+      name: "Analytics",
+      img: "https://www.cdnlogo.com/logos/g/82/google-analytics.svg",
+    },
+    {
+      name: "",
+      img: `${process.env.PUBLIC_URL}/images/datorama.png`,
+    },
+    {
       name: "Python",
       icon: "devicon-python-plain",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     },
     {
-      name: "React",
-      icon: "devicon-react-original",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
+      name: "MongoDB",
+      icon: "devicon-mongodb-plain",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    },
+    {
+      name: "Postgresql",
+      icon: "devicon-postgresql-plain",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     },
     {
       name: "Javascript",
       icon: "devicon-javascript-plain",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
+      name: "ReactJS",
+      icon: "devicon-react-original",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
     },
     {
       name: "Tailwind",
@@ -31,11 +53,6 @@ export default function DevTools() {
       name: "HTML5",
       icon: "devicon-html5-plain",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    },
-    {
-      name: "MongoDB",
-      icon: "devicon-mongodb-plain",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     },
     {
       name: "Express",
@@ -56,11 +73,6 @@ export default function DevTools() {
       name: "SQLAlchemy",
       icon: "devicon-sqlalchemy-plain",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg",
-    },
-    {
-      name: "Postgresql",
-      icon: "devicon-postgresql-plain",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     },
     {
       name: "Jest",
@@ -87,11 +99,11 @@ export default function DevTools() {
       icon: "devicon-trello-plain",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
     },
-    {
-      name: "Bootstrap",
-      icon: "devicon-bootstrap-plain",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-    },
+    // {
+    //   name: "Bootstrap",
+    //   icon: "devicon-bootstrap-plain",
+    //   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+    // },
     {
       name: "Canva",
       icon: "devicon-canva-original",
@@ -122,18 +134,6 @@ export default function DevTools() {
       icon: "devicon-slack-plain",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg",
     },
-    {
-      name: "Data Studio",
-      img: "https://www.cdnlogo.com/logos/g/71/google-data-studio.svg",
-    },
-    {
-      name: "Google Analytics",
-      img: "https://www.cdnlogo.com/logos/g/82/google-analytics.svg",
-    },
-    {
-      name: "Datorama",
-      img: `${process.env.PUBLIC_URL}/images/datorama.png`,
-    },
   ];
 
   return (
@@ -159,11 +159,13 @@ export default function DevTools() {
             {dev.icon ? (
               <i className={`${dev.icon} text-xl md:text-5xl`} />
             ) : (
-              <img
-                src={dev.img}
-                alt={dev.name}
-                className="text-xl md:text-5xl"
-              />
+              <div className="h-[30%] w-full">
+                <img
+                  src={dev.img}
+                  alt={dev.name}
+                  className="h-full w-full object-contain brightness-50"
+                />
+              </div>
             )}
             <h2>{dev.name}</h2>
           </div>
