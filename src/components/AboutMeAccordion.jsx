@@ -11,7 +11,7 @@ export default function AboutMeAccordion() {
       block1:
         "I bring with me a diverse background in engineering, product and project delivery. Great to see you here!",
       block2:
-        "I started my career in product management, performance media and ran branding and performance driven projects in the past 10 years. Through out my career, I worked closely with development teams on projects and always found it fascinating to see tech and digital experiences as a whole created from the ground up. During my maternity leave, I took the big leap into software development as a late career changer and highly enjoyed the challenge! Knowing my strengths in delivery, key stakeholder management and technical acumen, I enjoy working collaboratively with different teams and delivering excellent products and solutions that clients love.",
+        "I started my career in product management, performance media and ran branding and performance driven projects in the past 10 years. Through out my career, I worked closely with development teams on projects and always found it fascinating to see tech and digital experiences as a whole created from the ground up. During my maternity leave, I took the big leap into software development as a late career changer and highly enjoyed the challenge. Knowing my strengths in delivery, key stakeholder management and technical acumen, I enjoy working collaboratively with different teams and delivering excellent products and solutions that clients love.",
       block3:
         "Outside my professional hat, I am a wife and mum to a beautiful baby girl (now almost 3 years old!) and two fur babies. Our family live an active lifestyle and enjoy the sea, surf, and sand that the land down under has to offer! I am currently based in Sydney, Australia. 👨‍👩‍👧☀️🏄‍♀️🐶",
       block4: " ",
@@ -19,7 +19,7 @@ export default function AboutMeAccordion() {
       block6: " ",
     },
     {
-      title: "Life As A Dev - Hybrid Skills",
+      title: "Life As A Dev - Hybrid",
       intro: "Developer - Technical Product Manager/Client Success Hybrid",
       render: "paragraph",
       midRender: "true",
@@ -33,8 +33,7 @@ export default function AboutMeAccordion() {
         "🤝🏽 My experience working with teams and independently has taught me the immeasurable value of collaboration. What I especially love about the dev community is the support and knowledge sharing between peers - it is so refreshing! With that, I welcome constructive feedback in my work and look forward to collaborating more with peers. ",
       block5:
         "📓 It has definitely re-wired the way I think and made my problem-solving journey more interesting. Somehow, I find it enjoyable to look through other people’s source code and learn how things work. This helps me code better and improve my productivity.",
-      block6:
-        "Life as a dev did not come without hard work - it is the most challenging and rewarding but I am enjoying every good (and bad) of it. It has been an interesting journey so far - delving into software development puts my growth to an upward trajectory!🚀",
+      block6: "",
     },
     {
       title: "(FUN) Facts",

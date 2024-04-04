@@ -3,7 +3,7 @@ import Button from "./Button";
 // eslint-disable-next-line react/prop-types
 export default function Introduction() {
   const onButtonClickPdfDownload = () => {
-    fetch(`${process.env.PUBLIC_URL}/public/loreli_De_Jesus_CV.pdf`).then(
+    fetch(`${process.env.PUBLIC_URL}/public/loreli_de_jesus_resume.pdf`).then(
       (response) => {
         // eslint-disable-next-line no-console
         console.log(response);
