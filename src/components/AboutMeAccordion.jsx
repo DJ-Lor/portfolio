@@ -9,26 +9,26 @@ export default function AboutMeAccordion() {
       render: "paragraph",
       midRender: " ",
       block1:
-        "I am a Junior Full Stack Developer and an experienced Digital Marketer based in Sydney, Australia.",
+        "I bring with me a diverse background in engineering, product and project delivery. Great to see you here!",
       block2:
-        "I started my career in digital marketing and ran branding and performance driven campaigns in the past 10 years. Through out my career, I worked closely with development teams on projects and always found it fascinating to see tech and digital experiences as a whole created from the ground up. Fast forward to today, I took the big leap into software development as a late career changer and highly enjoy the challenge!",
+        "I started my career in product management, performance media and ran branding and performance driven projects in the past 10 years. Through out my career, I worked closely with development teams on projects and always found it fascinating to see tech and digital experiences as a whole created from the ground up. During my maternity leave, I took the big leap into software development as a late career changer and highly enjoyed the challenge! Knowing my strengths in delivery, key stakeholder management and technical acumen, I enjoy working collaboratively with different teams and delivering excellent products and solutions that clients love.",
       block3:
-        "Outside my professional hat, I am a wife and mum to a beautiful baby girl (now almost 2 years old!) and two fur babies. Our family live an active lifestyle and enjoy the sea, surf, and sand that the land down under has to offer! 👨‍👩‍👧☀️🏄‍♀️🐶",
+        "Outside my professional hat, I am a wife and mum to a beautiful baby girl (now almost 3 years old!) and two fur babies. Our family live an active lifestyle and enjoy the sea, surf, and sand that the land down under has to offer! I am currently based in Sydney, Australia. 👨‍👩‍👧☀️🏄‍♀️🐶",
       block4: " ",
       block5: " ",
       block6: " ",
     },
     {
-      title: "Life As A Dev",
-      intro: "Developer - Digital Marketer Hybrid",
+      title: "Life As A Dev - Hybrid Skills",
+      intro: "Developer - Technical Product Manager/Client Success Hybrid",
       render: "paragraph",
       midRender: "true",
       block1:
-        "My previous roles in digital marketing have been pivotal in the way I operate today. I am able to carry with me the learnings I have had into my software development journey and it has helped me a lot.",
+        "My previous roles in product management have been pivotal in the way I operate today. I am able to carry with me the learnings I have had into my software development and technical journey and it has helped me a lot.",
       block2:
-        "🔎 Through the lens of a marketer, I am able to visualise what it means to have a relevant, enjoyable and optimised consumer journey online. If there is one thing I have learned is that consumers are impatient - thus, I am highly aware that projects not only need to be visually appealing but be optimised efficiently in the way it is built.",
+        "🔎 Through the lens of a product manager, I am able to visualise what it means to have a relevant, enjoyable and optimised consumer journey online. If there is one thing I have learned is that consumers are impatient - thus, I am highly aware that projects not only need to be visually appealing but be optimised efficiently in the way it is built.",
       block3:
-        "📅 My project management skills allow me to work more efficiently and effectively in the way I plan my development projects now. This is especially useful as I entered the development world, my planning & preparation helps me focus on the most important now - honing my expertise as a Junior Developer.",
+        "📅 My project management skills allow me to work more efficiently and effectively in the way I plan my development projects now. This is especially useful as I entered the tech space, my planning & preparation helps me focus on the most important now - continuously growing and learning",
       block4:
         "🤝🏽 My experience working with teams and independently has taught me the immeasurable value of collaboration. What I especially love about the dev community is the support and knowledge sharing between peers - it is so refreshing! With that, I welcome constructive feedback in my work and look forward to collaborating more with peers. ",
       block5:
@@ -42,7 +42,7 @@ export default function AboutMeAccordion() {
       render: "grid",
       midRender: " ",
       block1:
-        "📍 I lived in Melbourne, Gold Coast and Sydney in the past 10 years. I am orginally from the Philippines, and the tropical lady in me loves the sun and see Sydney as home in the foreseeable future.",
+        "📍 I lived in Melbourne, Gold Coast and Sydney in the past 10 years. I am originally from the Philippines, and the tropical lady in me loves the sun and see Sydney as home in the foreseeable future.",
       block2:
         "🍀 I love coriander and can have it with almost any meal. I was once given a bouquet of coriander (instead of a flower) as birthday gift.",
       block3:

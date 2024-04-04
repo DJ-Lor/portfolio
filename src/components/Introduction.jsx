@@ -3,7 +3,7 @@ import Button from "./Button";
 // eslint-disable-next-line react/prop-types
 export default function Introduction() {
   const onButtonClickPdfDownload = () => {
-    fetch(`${process.env.PUBLIC_URL}/loreli_de_jesus_resume.pdf`).then(
+    fetch(`${process.env.PUBLIC_URL}/public/loreli_De_Jesus_CV.pdf`).then(
       (response) => {
         // eslint-disable-next-line no-console
         console.log(response);
@@ -27,7 +27,7 @@ export default function Introduction() {
 
           <span className="md:text-center">
             <p className="text-md lg:text-lg">
-              Junior Full Stack Developer & Digital Marketer.{" "}
+              Technical Project Management | Engineering | Client Success{" "}
             </p>
           </span>
           <span className="md:flex md:justify-center pt-8 md:pt-12 mb-24 md:mb-48 text-left">
