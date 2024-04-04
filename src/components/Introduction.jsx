@@ -11,7 +11,7 @@ export default function Introduction() {
           const fileURL = window.URL.createObjectURL(blob);
           const alink = document.createElement("a");
           alink.href = fileURL;
-          alink.download = `${process.env.PUBLIC_URL}/loreli_cv.pdf`;
+          alink.download = "loreli_cv.pdf";
           alink.click();
         });
       }
