@@ -2,7 +2,7 @@ import { React } from "react";
 import Button from "./Button";
 // eslint-disable-next-line react/prop-types
 export default function Introduction() {
-  const onButtonClickPdfDownload = () => { 
+  const onButtonClickPdfDownload = () => {
     fetch(`${process.env.PUBLIC_URL}/public/loreli_dejesus_resume.pdf`).then(
       (response) => {
         // eslint-disable-next-line no-console
