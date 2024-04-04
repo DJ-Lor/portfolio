@@ -2,8 +2,8 @@ import { React } from "react";
 import Button from "./Button";
 // eslint-disable-next-line react/prop-types
 export default function Introduction() {
-  const onButtonClickPdfDownload = () => {
-    fetch(`${process.env.PUBLIC_URL}/public/loreli_de_jesus_resume.pdf`).then(
+  const onButtonClickPdfDownload = () => { 
+    fetch(`${process.env.PUBLIC_URL}/public/loreli_dejesus_resume.pdf`).then(
       (response) => {
         // eslint-disable-next-line no-console
         console.log(response);
@@ -11,7 +11,7 @@ export default function Introduction() {
           const fileURL = window.URL.createObjectURL(blob);
           const alink = document.createElement("a");
           alink.href = fileURL;
-          alink.download = "loreli_cv.pdf";
+          alink.download = `${process.env.PUBLIC_URL}/loreli_cv.pdf`;
           alink.click();
         });
       }
