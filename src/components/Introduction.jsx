@@ -27,7 +27,7 @@ export default function Introduction() {
 
           <span className="md:text-center">
             <p className="text-md lg:text-lg">
-              Technical Project Management | Engineering | Client Success{" "}
+              Technical Product Management | Engineering | Client Success{" "}
             </p>
           </span>
           <span className="md:flex md:justify-center pt-8 md:pt-12 mb-24 md:mb-48 text-left">
